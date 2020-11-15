@@ -5,37 +5,43 @@ body {
     scroll-behavior: smooth;
 }
 
-#content {
-    margin-left: 5%;
-    margin-right: 5%;
-}
-
 .banner {
-    height: 1094px;
-    /* width: auto; */
+    height: auto;
     background-image: url(banner.png);
     color: #ffffff;
-    /* position: relative; */
+    
+}
+
+.margin {
+    margin: auto;
+    width: 90%;
 }
 
 .menu {
-    display: block;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    
 }
 
 .lh {
-    margin-top: 50px;
-    float: left;
+    padding: 50px 0;
+    
 }
 
 .rh {
     margin-top: 50px;
-    float: right;
+    
 }
 
-li {
+.lh li {
     display: inline-block;
-    padding: 20px;
+    margin-right: 20px;
+}
+
+.rh li {
+    display: inline-block;
+    margin-left: 20px;
 }
 /* fix from here */
 
@@ -65,13 +71,21 @@ li {
 
 button {
     
-    margin-top: 20px;
+    margin: 25px 0;
     border-radius: 25px;
     font-size: 14px;
-    padding: 20px;
+    font-weight: bold;
+    padding: 20px 30px;
     cursor: pointer;
     color: #fff;
     background-color: #FD5D65;
     border: none;
         
+}
+
+.midbody {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 5%;
+    gap: 50px;
 }
